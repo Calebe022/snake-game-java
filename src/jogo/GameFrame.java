@@ -11,7 +11,6 @@ public class GameFrame extends JFrame {
         this.setResizable(false);
         this.setLocationRelativeTo(null);
 
-        // Criando botão de iniciar
         JButton startButton = new JButton("Iniciar Jogo");
         startButton.setFocusable(false);
         startButton.addActionListener(e -> iniciarJogo());
