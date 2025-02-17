@@ -42,7 +42,7 @@ public class GamePanel extends JPanel implements ActionListener {
         y[0] = 0;
         timer = new Timer(VELOCIDADE, this);
         timer.start();
-        requestFocus(); // Garante que o painel receba os eventos de teclado
+        requestFocus();
     }
 
     public void paintComponent(Graphics g) {
@@ -149,12 +149,12 @@ public class GamePanel extends JPanel implements ActionListener {
             y[i] = startY;
         }
 
-        direcao = 'P'; // Mantém a cobra parada no início
+        direcao = 'P';
         rodando = false;
         pontos = 0;
         partesCobra = 5;
 
-        gerarComida(); // Reposiciona a comida
+        gerarComida();
         timer.start();
         this.revalidate();
         this.repaint();
